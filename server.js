@@ -4,6 +4,7 @@
 // init project
 var express = require('express');
 var app = express();
+var apiRouter = require('./api/router');
 var bodyParser = require('body-parser');
 var moment = require('moment');
 
@@ -16,6 +17,10 @@ Date.prototype.isValid = function () {
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
+
+// API Routes
+app.use('/api', apiRouter);
+
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
