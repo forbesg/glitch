@@ -1,0 +1,95 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://cdn.glitch.com/6ed9792c-022c-4443-bb04-73d002dfb5c7%2Fclock.jpg?1505399698343);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ddd;
+  font-family: helvetica, arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.main-container {
+  background-color: rgba(45, 45, 45, 0.8);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+h1 {
+  font-weight: normal;
+  color: #ddd;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  background-color: #ddd;
+  border: 1px solid #444;
+  cursor: pointer;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #444;
+  color: #ddd;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}

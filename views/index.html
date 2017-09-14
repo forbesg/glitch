@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>
+          TimeStamp MicroService | forbesg
+        </h1>
+      </header>
+
+      <main>
+        <h4>
+          Input Your Date
+        </h4>
+        <form method="post" action="/date">
+          <input type="text" maxlength="100" name="date" placeholder="Date">
+          <button type="submit">Submit</button>
+        </form>
+        <hr />
+        <h4>
+          Or Add it to the end of the url
+        </h4>
+        <p>
+          E.G. - https://superb-innocent.glitch.me/Your Date Goes Here
+        </p>
+      </main>
+
+      <footer>
+        <a href="http://forbesg.github.io">
+          Forbes Gray 2017
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
